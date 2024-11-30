@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guilherme livrões</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ficção</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Manga</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Ta sabido por onde começar?</h2>
+    <p class="banner__texto">Da uma olhada nesses livros supimpas aqui pra você.</p>
+    <input type="search" class="banner__pesquisa" placeholder="o que oce vai lê?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/et bilu aprendizados.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/harry potter.jpg"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/senhor dos aneis.png" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/livro da peppa.jpg" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/memórias.jpg" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/dom casmurro.jpg" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">ET Bilu, as receitas para prolongar a vida</h2>
+          <p class="descrição__texto">
+            Aprendendo a como prolongar a vida com nosso famoso ET Bilu.
+          </p>
+        </div>
+        <img src="img/et bilu.jpg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item">
+            <img src="img/Compras.svg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/et bilu.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/jujutsu kaisen.png" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/manga one piece.jpg" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/livro do roblox.png" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/baixa memoria livro.jpg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img src="img/biblia.jpg" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Autor do Mês</h3>
+          <h2 class="descrição__titulo-livro">Guilherme Lourenço bom de papo</h2>
+          <p class="descrição__texto">Autor dos melhores livros ja conhecido pela humanidade e também criador oficial do personagem "ET Bilu" um fenômeno na escola JP
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Escritora.svg" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">livros de ficção</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros de romance</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros de ação</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros de comédia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros de fantasia</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros de suspense</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros de história</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Livros japoneses</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique sempre dentro quando vier mais coisa boa pa nois</h2>
+    <p class="contato__texto">
+      Atualizações de livros, mangas e coisa daora fi
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Guilhermadas</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
